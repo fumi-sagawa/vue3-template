@@ -5,13 +5,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType, toRef } from 'vue';
+import { toRef } from 'vue';
 import { useStoreAngle } from '../hooks/useStoreAngle';
-const props = defineProps({
-  unit: {
-    type: String as PropType<'deg' | 'rad'>,
-    default: 'deg',
-  },
-});
+const props = defineProps<{
+  unit: 'deg' | 'rad';
+}>();
 const angle = useStoreAngle(toRef(props, 'unit'));
 </script>

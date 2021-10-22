@@ -5,13 +5,10 @@
 </template>
 
 <script setup lang="ts">
-import { PropType, toRef } from 'vue';
+import { toRef } from 'vue';
 import { useStoreLength } from '../hooks/useStoreLength';
-const props = defineProps({
-  unit: {
-    type: String as PropType<'px' | 'inch' | 'mm'>,
-    default: 'px',
-  },
-});
+const props = defineProps<{
+  unit: 'px' | 'inch' | 'mm';
+}>();
 const length = useStoreLength(toRef(props, 'unit'));
 </script>
