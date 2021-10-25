@@ -4,13 +4,11 @@ const { count, up, reset, result } = useFizzBuzz();
 </script>
 
 <template>
-  <div class="demo">
-    <div class="fizzBuzzView">
-      数値：{{ count }}<br />
-      解答：{{ result }}<br />
-      <button @click="up">カウントアップ</button>
-      <button @click="reset">リセット</button>
-    </div>
+  <div class="fizzBuzzView">
+    数値：{{ count }}<br />
+    解答：{{ result }}<br />
+    <button @click="up">カウントアップ</button>
+    <button @click="reset">リセット</button>
   </div>
 </template>
 

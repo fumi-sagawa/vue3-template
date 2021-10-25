@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import {} from '../components/FizzBuzz.vue';
 import { useFizzBuzz } from '../hooks/useFizzBuzz';
 import FizzBuzz from '../components/FizzBuzz.vue';
 const { count, up, reset, result } = useFizzBuzz();
