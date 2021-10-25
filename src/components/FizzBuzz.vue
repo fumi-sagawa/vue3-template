@@ -1,5 +1,9 @@
+<script setup lang="ts">
+import { useFizzBuzz } from '../hooks/useFizzBuzz';
+const { count, up, reset, result } = useFizzBuzz();
+</script>
+
 <template>
-  <h1>FizzBuzzの例</h1>
   <div class="demo">
     <div class="fizzBuzzView">
       数値：{{ count }}<br />
@@ -9,11 +13,6 @@
     </div>
   </div>
 </template>
-
-<script setup lang="ts">
-import { useFizzBuzz } from '../../hooks/useFizzBuzz';
-const { count, up, reset, result } = useFizzBuzz();
-</script>
 
 <style lang="scss" scoped>
 .demo {

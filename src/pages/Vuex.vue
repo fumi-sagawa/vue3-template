@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import StoreLength from '../StoreLength.vue';
-import StoreAngle from '../StoreAngle.vue';
+import StoreLength from '../components/StoreLength.vue';
+import StoreAngle from '../components/StoreAngle.vue';
 </script>
 
 <template>
@@ -26,13 +26,6 @@ import StoreAngle from '../StoreAngle.vue';
       <StoreAngle unit="deg" />
       <StoreAngle unit="rad" />
     </div>
-  </div>
-  <div>
-    引用元：ICS MEDIAさま
-    <a href="https://ics.media/entry/210929/"
-      >コンポーネントを小さく・きれいに設計しよう Vue Composition
-      APIを活用したコンポーネント分割術</a
-    >
   </div>
 </template>
 
