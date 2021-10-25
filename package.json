@@ -12,6 +12,7 @@
   "dependencies": {
     "sass": "1.39.0",
     "vue": "^3.2.16",
+    "vue-router": "4",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
