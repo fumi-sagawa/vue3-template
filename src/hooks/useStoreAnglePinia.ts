@@ -1,13 +1,11 @@
 import { computed, Ref } from 'vue';
 import { useAngleStore } from '../store/angle';
-import { State } from '../store';
 
 /** deg→radの換算値 */
 const DEG2RAD = Math.PI / 180;
 
 export const useStoreAngle = (unit: Ref<'deg' | 'rad'>) => {
-  // ストアを利用する（useStoreはVuexが提供しているコンポジション関数）
-  // const store = useStore<State>();
+  // ストア呼び出し
   const store = useAngleStore();
 
   // ストアとの入出力をcomputedで実装

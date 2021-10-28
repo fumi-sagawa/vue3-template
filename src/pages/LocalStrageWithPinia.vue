@@ -1,20 +1,7 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import { useTodoStore } from '../store/todo';
-// import { storeToRefs } from 'pinia';
+import { useTodo } from '../hooks/useTodo';
 
-const Todos = useTodoStore();
-const todos = computed(() => Todos.getAllTodos);
-const isEmpty = computed(() => Todos.todoEmpty);
-const removeTodo = Todos.removeTodo;
-
-const newTodo = ref('');
-const addTodo = () => {
-  if (newTodo.value != '') {
-    Todos.addTodo(newTodo.value);
-    newTodo.value = '';
-  }
-};
+const { todos, isEmpty, removeTodo, newTodo, addTodo } = useTodo();
 </script>
 
 <template>
