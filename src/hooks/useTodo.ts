@@ -15,8 +15,10 @@ export const useTodo = () => {
   //local
   const newTodo = ref('');
   const addTodo = () => {
-    store.todos.push(newTodo.value);
-    newTodo.value = '';
+    if (newTodo.value.length) {
+      store.todos.push(newTodo.value);
+      newTodo.value = '';
+    }
   };
 
   return {
