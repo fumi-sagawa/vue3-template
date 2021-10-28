@@ -5,11 +5,7 @@ import StoreAngle from '../components/StoreAnglePinia.vue';
 
 <template>
   <div>
-    <h1>Vuexの例</h1>
-    <div>
-      Vuexストアに格納された長さ(length)と角度(angle)の2つの値を、それぞれ複数の単位で表示・更新する例です。
-    </div>
-
+    <h1>Piniaの例</h1>
     <div class="demo">
       <h2>何かの長さ</h2>
       <StoreLength unit="px" />

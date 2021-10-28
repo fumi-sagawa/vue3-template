@@ -12,6 +12,7 @@ provide(key, user);
 </script>
 
 <template>
+  <h1>Inject/Procideの例</h1>
   <div>
     <Injectioner />
   </div>
