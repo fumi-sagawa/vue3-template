@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import Top from './pages/Top.vue';
 import FizzBuzzPage from './pages/FizzBuzzPage.vue';
 import Vuex from './pages/Vuex.vue';
+import Pinia from './pages/Pinia.vue';
 import LifeCycle from './pages/LifeCycle.vue';
 import Provider from './pages/Provider.vue';
 
@@ -9,6 +10,7 @@ import Provider from './pages/Provider.vue';
 const routes = [
   { path: '/', component: Top },
   { path: '/vuex', component: Vuex },
+  { path: '/pinia', component: Pinia },
   { path: '/fizzbuzz', component: FizzBuzzPage },
   { path: '/lifecycle', component: LifeCycle },
   { path: '/injectprovide', component: Provider },

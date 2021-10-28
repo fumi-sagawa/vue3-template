@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import { useFizzBuzz } from '../hooks/useFizzBuzz';
+import Button from './Button.vue';
+
 const { count, up, reset, result } = useFizzBuzz();
 </script>
 
@@ -7,8 +9,8 @@ const { count, up, reset, result } = useFizzBuzz();
   <div class="fizzBuzzView">
     数値：{{ count }}<br />
     解答：{{ result }}<br />
-    <button @click="up">カウントアップ</button>
-    <button @click="reset">リセット</button>
+    <Button text="カウントアップ" :click="up"></Button>
+    <Button text="リセット" :click="reset"></Button>
   </div>
 </template>
 

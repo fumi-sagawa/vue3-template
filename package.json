@@ -10,6 +10,7 @@
     "fix": "yarn format && yarn lint"
   },
   "dependencies": {
+    "pinia": "^2.0.0",
     "sass": "1.39.0",
     "vue": "^3.2.16",
     "vue-router": "4",
