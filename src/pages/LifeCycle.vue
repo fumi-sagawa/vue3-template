@@ -24,10 +24,14 @@ const minus = () => testnum.value--;
 watchEffect(() =>
   console.log(`watchEffect Activated!数値は${testnum.value}！`),
 );
+//ローカルストレージのテスト
+import { useTodo } from '../hooks/useTodo';
+const { todos } = useTodo();
+console.log(todos.value);
 </script>
 
 <template>
-  <h1>ライフサイクルの例(コンソール参照)</h1>
+  <h1>ライフサイクルなどのテスト(コンソール参照)</h1>
   <div class="demo">
     <div>リアクティブな値とレンダリングのテスト：{{ testnum }}</div>
     <div>
