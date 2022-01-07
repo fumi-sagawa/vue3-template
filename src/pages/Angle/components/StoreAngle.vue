@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { toRef } from 'vue';
-import { useStoreAngle } from '../hooks/useStoreAngle';
+import { useStoreAngle } from './useStoreAngle';
 
 const props = defineProps<{
   unit: 'deg' | 'rad';

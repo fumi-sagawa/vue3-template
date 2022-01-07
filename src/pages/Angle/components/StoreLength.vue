@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { toRef } from 'vue';
-import { useStoreLength } from '../hooks/useStoreLength';
+import { useStoreLength } from './useStoreLength';
 
 const props = defineProps<{
   unit: 'px' | 'inch' | 'mm';

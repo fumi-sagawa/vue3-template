@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useFizzBuzz } from '../hooks/useFizzBuzz';
-import Button from './Button.vue';
+import { useFizzBuzz } from './useFizzBuzzCounter';
+import Button from '@/components/uiParts/Button.vue';
 
 const { count, up, reset, result } = useFizzBuzz();
 </script>

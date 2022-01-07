@@ -1,6 +1,13 @@
-import { useTodoStore } from '../store/todo';
 import { computed, ref } from 'vue';
-import { storeToRefs } from 'pinia';
+import { storeToRefs, defineStore } from 'pinia';
+import { useStorage } from '@vueuse/core';
+
+const useTodoStore = defineStore('Todo', () => {
+  const todos = useStorage<string[]>('todos', []);
+  return {
+    todos,
+  };
+});
 
 export const useTodo = () => {
   //store

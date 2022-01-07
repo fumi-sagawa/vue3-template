@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import FizzBuzz from '../components/FizzBuzz.vue';
+import FizzBuzz from './components/FizzBuzzCounter.vue';
 </script>
 
 <template>

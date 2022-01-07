@@ -1,19 +1,24 @@
 import { computed, Ref } from 'vue';
-import { useStore } from 'vuex';
-import { State } from '../store';
+import { defineStore } from 'pinia';
+import { ref } from 'vue';
 
 /** deg→radの換算値 */
 const DEG2RAD = Math.PI / 180;
 
+const useAngleStore = defineStore('angle', () => {
+  const angle = ref<number>(60);
+  return { angle };
+});
+
 export const useStoreAngle = (unit: Ref<'deg' | 'rad'>) => {
-  // ストアを利用する（useStoreはVuexが提供しているコンポジション関数）
-  const store = useStore<State>();
+  // ストア呼び出し
+  const store = useAngleStore();
 
   // ストアとの入出力をcomputedで実装
   const angle = computed({
     // ストアの値をdegから指定された単位に変換・四捨五入してして返す
     get() {
-      const deg = store.state.angle;
+      const deg = store.angle;
       if (unit.value === 'rad') return Number((deg * DEG2RAD).toFixed(2));
       return Number.isFinite(deg) ? Math.round(deg) : 0;
     },
@@ -21,7 +26,7 @@ export const useStoreAngle = (unit: Ref<'deg' | 'rad'>) => {
     set(v: number) {
       let deg = v;
       if (unit.value === 'rad') deg = v / DEG2RAD;
-      store.dispatch('changeAngle', deg);
+      store.angle = deg;
     },
   });
 

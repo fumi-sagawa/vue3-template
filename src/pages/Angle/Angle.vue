@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import StoreLength from '../components/StoreLengthPinia.vue';
-import StoreAngle from '../components/StoreAnglePinia.vue';
+import StoreLength from './components/StoreLength.vue';
+import StoreAngle from './components/StoreAngle.vue';
 </script>
 
 <template>
