@@ -8,8 +8,8 @@
     "lint": "eslint --fix src/*.{ts,vue} && eslint --fix src/**/*.{ts,vue}",
     "format": "prettier -w src/*.{ts,vue} && prettier -w src/**/*.{ts,vue}",
     "fix": "yarn format && yarn lint",
-    "test": "jest src",
-    "e2e": "npx playwright codegen https://playwright.dev/"
+    "unit": "jest src",
+    "e2e": "npx playwright test"
   },
   "dependencies": {
     "@vueuse/core": "^6.7.4",
