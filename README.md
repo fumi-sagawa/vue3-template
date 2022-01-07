@@ -13,3 +13,4 @@
 - [コンポーネントを小さく・きれいに設計しよう Vue Composition API を活用したコンポーネント分割術](https://ics.media/entry/210929/)
 - [Pinia](https://pinia.esm.dev/introduction.html)
 - [VueUse useStorage](https://vueuse.org/core/usestorage/)
+- [Mock Service Worker で開発用のモック API を作る](https://zenn.dev/ryo_kawamata/articles/mock-api-server-with-msw)

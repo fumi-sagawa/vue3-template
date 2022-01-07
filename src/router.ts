@@ -4,6 +4,7 @@ import FizzBuzzPage from '@/pages/FizzBuzz/FizzBuzz.vue';
 import Angle from '@/pages/Angle/Angle.vue';
 import ToDo from '@/pages/ToDo/ToDo.vue';
 import LifeCycle from '@/pages/LifeCycle/LifeCycle.vue';
+import APITest from '@/pages/APITest/APITest.vue';
 
 // ルートの定義
 const routes = [
@@ -12,6 +13,7 @@ const routes = [
   { path: '/todo', component: ToDo },
   { path: '/fizzbuzz', component: FizzBuzzPage },
   { path: '/lifecycle', component: LifeCycle },
+  { path: '/apitest', component: APITest },
 ];
 
 // ルーターの作成

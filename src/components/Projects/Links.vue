@@ -7,6 +7,7 @@
     <router-link to="/todo">TODOwithLocalstrage&Pinia</router-link>
     <router-link to="/fizzbuzz">FizzBuzz</router-link>
     <router-link to="/lifecycle">LifeCycle</router-link>
+    <router-link to="/apitest">APITest</router-link>
   </div>
 </template>
 
