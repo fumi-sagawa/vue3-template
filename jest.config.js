@@ -5,4 +5,5 @@ module.exports = {
     '^.+\\.ts$': 'ts-jest',
     '^.+\\.vue$': 'vue-jest',
   },
+  testMatch: ['**/*.test.ts'],
 };
