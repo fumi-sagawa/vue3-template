@@ -2,8 +2,8 @@
 import { mount } from '@vue/test-utils';
 import Button from './Button.vue';
 
-describe('HelloWorld', () => {
-  it('should display header text', () => {
+describe('Button Test', () => {
+  it('should display props text', () => {
     const text = 'buttonName';
     const click = () => {
       return;
