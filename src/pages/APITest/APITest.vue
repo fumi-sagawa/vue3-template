@@ -9,8 +9,8 @@ const users = ref<User[]>([]);
 
 onMounted(async () => {
   const res = await fetch('/users');
-  console.log(res);
   users.value = await res.json();
+  console.log(res);
   console.log(users.value);
 });
 </script>

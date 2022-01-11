@@ -4,10 +4,10 @@
 
 インストール：`yarn`  
 開発：`yarn dev`  
-ビルド：`yarn build`.   
-ユニットテスト：`yarn unit`. 
-E2E テスト：`yarn e2e`. 
-E2E テストコード生成：`npx playwright codegen [options] [url]`. 
+ビルド：`yarn build`  
+ユニットテスト：`yarn unit`  
+E2E テスト：`yarn e2e`  
+E2E テストコード生成：`npx playwright codegen [options] [url]`  
 <br>
 <br>
 
