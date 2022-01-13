@@ -15,4 +15,14 @@ export default defineConfig({
       '@/': path.join(__dirname, './src/'),
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@use "@/assets/scss/" as *;`,
+        //Dart Sassから@useになったためこちらを使用。importの場合は以下のように記載
+        // additionalData: `@import "@/assets/scss/";`,
+        // additionalData: `$color-main: red;`,
+      },
+    },
+  },
 });

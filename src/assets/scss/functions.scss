@@ -1,0 +1,8 @@
+@use 'variables';
+
+@mixin mq($breakpoint: md) {
+  //メインで使用するブレイクポイントを指定
+  @media #{map-get(variables.$breakpoints, $breakpoint)} {
+    @content;
+  }
+}

@@ -8,6 +8,7 @@
     <router-link to="/fizzbuzz">FizzBuzz</router-link>
     <router-link to="/lifecycle">LifeCycle</router-link>
     <router-link to="/apitest">APITest</router-link>
+    <router-link to="/scssTest">ScssTest</router-link>
   </div>
 </template>
 
